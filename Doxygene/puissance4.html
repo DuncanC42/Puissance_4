@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Puissance 4 - Documentation - Duncan Cadoret: Référence du fichier puissance4.2comment.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="a_01_1881-puissance-4.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Puissance 4 - Documentation - Duncan Cadoret
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier puissance4.2comment.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8f8cd1540fdc837cee034be5be8c2aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a8f8cd1540fdc837cee034be5be8c2aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corresponds au nombre de colonnes dans un tableau type Puissance 4.  <a href="puissance4_82comment_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8f8cd1540fdc837cee034be5be8c2aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a2696e1a14c0a6c8ef2dde2b2c38fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">NBLIG</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:aa5a2696e1a14c0a6c8ef2dde2b2c38fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programme du jeu Puissance 4.  <a href="puissance4_82comment_8c.html#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa5a2696e1a14c0a6c8ef2dde2b2c38fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a28d75bf5b31d027d7c2f4812177f9947"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>[<a class="el" href="puissance4_82comment_8c.html#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">NBLIG</a>][<a class="el" href="puissance4_82comment_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>]</td></tr>
+<tr class="memdesc:a28d75bf5b31d027d7c2f4812177f9947"><td class="mdescLeft">&#160;</td><td class="mdescRight">type tableau à deux dimensions contenants des caractères  <a href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a28d75bf5b31d027d7c2f4812177f9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac2fbffe5da07adca54cb89198e9d4473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ac2fbffe5da07adca54cb89198e9d4473">afficheQuestionPion</a> (char *P1, char *P2)</td></tr>
+<tr class="separator:ac2fbffe5da07adca54cb89198e9d4473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f23d45a1e7d84e4f2bf8f9c79ce3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a67f23d45a1e7d84e4f2bf8f9c79ce3fd">afficher</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, char, int)</td></tr>
+<tr class="memdesc:a67f23d45a1e7d84e4f2bf8f9c79ce3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Création de l'aspect visuel du tableau à deux dimensions affiché  <a href="puissance4_82comment_8c.html#a67f23d45a1e7d84e4f2bf8f9c79ce3fd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a67f23d45a1e7d84e4f2bf8f9c79ce3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36852dbe8af78519bb6ef96af2c24bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a36852dbe8af78519bb6ef96af2c24bb3">choisirColonne</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, char, int, bool *)</td></tr>
+<tr class="separator:a36852dbe8af78519bb6ef96af2c24bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ae37a741a4da29eabb3fac2a1b44c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ae7ae37a741a4da29eabb3fac2a1b44c5">estVainqueur</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int, int)</td></tr>
+<tr class="memdesc:ae7ae37a741a4da29eabb3fac2a1b44c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction booléenne indiquant si le joueur a gagné  <a href="puissance4_82comment_8c.html#ae7ae37a741a4da29eabb3fac2a1b44c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae7ae37a741a4da29eabb3fac2a1b44c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d88e8a1703e2a4e89e98344ee7bb93d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a4d88e8a1703e2a4e89e98344ee7bb93d">estVainqueurDG</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int, int)</td></tr>
+<tr class="memdesc:a4d88e8a1703e2a4e89e98344ee7bb93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction booléenne indiquant si le joueur a gagné sur la diagonale allant de en haut à droite à en bas à gauche.  <a href="puissance4_82comment_8c.html#a4d88e8a1703e2a4e89e98344ee7bb93d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4d88e8a1703e2a4e89e98344ee7bb93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984d85a915aaea9f88d3bd1b1fb2e30e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a984d85a915aaea9f88d3bd1b1fb2e30e">estVainqueurGD</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int, int)</td></tr>
+<tr class="memdesc:a984d85a915aaea9f88d3bd1b1fb2e30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction booléenne indiquant si le joueur a gagné sur la diagonale allant de en haut à gauche à en bas à droite.  <a href="puissance4_82comment_8c.html#a984d85a915aaea9f88d3bd1b1fb2e30e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a984d85a915aaea9f88d3bd1b1fb2e30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f7b7c2343c46fb2eb3345c581ee3b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a02f7b7c2343c46fb2eb3345c581ee3b2">estVainqueurHoriz</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int, int)</td></tr>
+<tr class="memdesc:a02f7b7c2343c46fb2eb3345c581ee3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction booléenne indiquant si le joueur a gagné sur l'axe horizontal.  <a href="puissance4_82comment_8c.html#a02f7b7c2343c46fb2eb3345c581ee3b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a02f7b7c2343c46fb2eb3345c581ee3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f027b0b097e7d2f9e97519985162f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#af5f027b0b097e7d2f9e97519985162f7">estVainqueurVertic</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int, int)</td></tr>
+<tr class="memdesc:af5f027b0b097e7d2f9e97519985162f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction booléenne indiquant si le joueur a gagné sur l'axe vertical.  <a href="puissance4_82comment_8c.html#af5f027b0b097e7d2f9e97519985162f7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af5f027b0b097e7d2f9e97519985162f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4f2e41d7402790eb76dc1d65e05b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a3e4f2e41d7402790eb76dc1d65e05b0e">finDePartie</a> (char, bool *)</td></tr>
+<tr class="memdesc:a3e4f2e41d7402790eb76dc1d65e05b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procédure permettant d'afficher le resultat final de la partie.  <a href="puissance4_82comment_8c.html#a3e4f2e41d7402790eb76dc1d65e05b0e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e4f2e41d7402790eb76dc1d65e05b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0966595924ee7c26921c475d41b4d80f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a0966595924ee7c26921c475d41b4d80f">grillePleine</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>)</td></tr>
+<tr class="memdesc:a0966595924ee7c26921c475d41b4d80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui indique si la grille de jeu est pleine ou non.  <a href="puissance4_82comment_8c.html#a0966595924ee7c26921c475d41b4d80f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0966595924ee7c26921c475d41b4d80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c1f470b92302f877a82e60a1cf5918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a87c1f470b92302f877a82e60a1cf5918">initGrille</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>)</td></tr>
+<tr class="memdesc:a87c1f470b92302f877a82e60a1cf5918"><td class="mdescLeft">&#160;</td><td class="mdescRight">procédure qui intialise le tableau du puissance 4  <a href="puissance4_82comment_8c.html#a87c1f470b92302f877a82e60a1cf5918">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a87c1f470b92302f877a82e60a1cf5918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25962820991fe1806a61b259fccde621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a25962820991fe1806a61b259fccde621">jouer</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, char, int *, int *, bool *)</td></tr>
+<tr class="memdesc:a25962820991fe1806a61b259fccde621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procédure permettant à un jouer de jouer son tour.  <a href="puissance4_82comment_8c.html#a25962820991fe1806a61b259fccde621">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a25962820991fe1806a61b259fccde621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bf81c8d178fb8a48f3115c0d630fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ac2bf81c8d178fb8a48f3115c0d630fe6">rules</a> ()</td></tr>
+<tr class="memdesc:ac2bf81c8d178fb8a48f3115c0d630fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procédure permettant d'afficher les règles du jeu.  <a href="puissance4_82comment_8c.html#ac2bf81c8d178fb8a48f3115c0d630fe6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac2bf81c8d178fb8a48f3115c0d630fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96747a0a7e62a5256085f8d5173211d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ae96747a0a7e62a5256085f8d5173211d">trouveLigne</a> (<a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>, int)</td></tr>
+<tr class="memdesc:ae96747a0a7e62a5256085f8d5173211d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui indique la ligne où sera posé le pion.  <a href="puissance4_82comment_8c.html#ae96747a0a7e62a5256085f8d5173211d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae96747a0a7e62a5256085f8d5173211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afa35471c5555aab8abbaae1d818b75d7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#afa35471c5555aab8abbaae1d818b75d7">COLONNE_DEBUT</a> = <a class="el" href="puissance4_82comment_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>/2</td></tr>
+<tr class="separator:afa35471c5555aab8abbaae1d818b75d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ea4e387273c6109e08085bd9050ca7"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ab8ea4e387273c6109e08085bd9050ca7">INCONNU</a> = ' '</td></tr>
+<tr class="separator:ab8ea4e387273c6109e08085bd9050ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25c2be9670ba77f0ccbad1f949dda4b"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#aa25c2be9670ba77f0ccbad1f949dda4b">PION_A</a> = 'X'</td></tr>
+<tr class="separator:aa25c2be9670ba77f0ccbad1f949dda4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93cbc87a0c9739844b09ca78330c000"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ae93cbc87a0c9739844b09ca78330c000">PION_B</a> = 'O'</td></tr>
+<tr class="separator:ae93cbc87a0c9739844b09ca78330c000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d312968aa2cda5d160cf82320b3826"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a16d312968aa2cda5d160cf82320b3826">RED</a> [18] = &quot;\033[31m●\033[0m&quot;</td></tr>
+<tr class="separator:a16d312968aa2cda5d160cf82320b3826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e70a095fdc823063b2d115d50a391f"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#a65e70a095fdc823063b2d115d50a391f">VIDE</a> = ' '</td></tr>
+<tr class="separator:a65e70a095fdc823063b2d115d50a391f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4794c7042c6eca84bc02d8e57d3d0db"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance4_82comment_8c.html#ab4794c7042c6eca84bc02d8e57d3d0db">YELLOW</a> [18] = &quot;\033[33m●\033[0m&quot;</td></tr>
+<tr class="separator:ab4794c7042c6eca84bc02d8e57d3d0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="a8f8cd1540fdc837cee034be5be8c2aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8cd1540fdc837cee034be5be8c2aa5">&#9670;&nbsp;</a></span>NBCOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NBCOL&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Corresponds au nombre de colonnes dans un tableau type Puissance 4. </p>
+
+</div>
+</div>
+<a id="aa5a2696e1a14c0a6c8ef2dde2b2c38fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a2696e1a14c0a6c8ef2dde2b2c38fa">&#9670;&nbsp;</a></span>NBLIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NBLIG&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programme du jeu Puissance 4. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Cadoret Duncan</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.4</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>22 novembre 2022</dd></dl>
+<p>Ce programme permet a deux personnes de s'affronter afin d'affirmer leur supériorité sur l'autre au travers du jeu mondialement connu qu'est le PUISSANCE 4 !</p>
+<p>Corresponds au nombre de lignes dans un tableau type Puissance 4 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="a28d75bf5b31d027d7c2f4812177f9947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d75bf5b31d027d7c2f4812177f9947">&#9670;&nbsp;</a></span>Grille</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Grille</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type tableau à deux dimensions contenants des caractères </p>
+<p>Le type Grille permet de stocker les elements de façon à simuler les différentes entrées possibles dans la grille d'un puissance 4 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac2fbffe5da07adca54cb89198e9d4473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2fbffe5da07adca54cb89198e9d4473">&#9670;&nbsp;</a></span>afficheQuestionPion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficheQuestionPion </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>P1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>P2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67f23d45a1e7d84e4f2bf8f9c79ce3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f23d45a1e7d84e4f2bf8f9c79ce3fd">&#9670;&nbsp;</a></span>afficher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>COLONNE_DEBUT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Création de l'aspect visuel du tableau à deux dimensions affiché </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: Grille représentant la grille de jeu</td></tr>
+    <tr><td class="paramname">pion</td><td>: pion du joueur qui doit jouer</td></tr>
+    <tr><td class="paramname">colonne</td><td>colonne où se situe le pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Mise en forme de la grille de jeu en faisant appairaitre le pion au dessus du tableau pour choisir sa colonne mais cette procédure permet aussi de remplacer les pions 'O' 'X' par des pions ronds de couleur pour être fidèle au jeu. </p>
+
+</div>
+</div>
+<a id="a36852dbe8af78519bb6ef96af2c24bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36852dbe8af78519bb6ef96af2c24bb3">&#9670;&nbsp;</a></span>choisirColonne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int choisirColonne </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>rageQuit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7ae37a741a4da29eabb3fac2a1b44c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ae37a741a4da29eabb3fac2a1b44c5">&#9670;&nbsp;</a></span>estVainqueur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estVainqueur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction booléenne indiquant si le joueur a gagné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: Grille représentant la grille de jeu (la même que tout à l'heure)</td></tr>
+    <tr><td class="paramname">ligne</td><td>: Ligne où a été posé le dernier pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: Colonne où a été posé le dernier pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la condition de victoire est remplie</dd></dl>
+<p>Consiste a vérifier dans chacunes des directions (par l'appel des fonctions correspondantes à chacunes de celles-ci) si 4 pions sont allignés </p>
+
+</div>
+</div>
+<a id="a4d88e8a1703e2a4e89e98344ee7bb93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d88e8a1703e2a4e89e98344ee7bb93d">&#9670;&nbsp;</a></span>estVainqueurDG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estVainqueurDG </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction booléenne indiquant si le joueur a gagné sur la diagonale allant de en haut à droite à en bas à gauche. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: Grille représentant la grille de jeu (la même que tout à l'heure)</td></tr>
+    <tr><td class="paramname">ligne</td><td>: Ligne où a été posé le dernier pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: Colonne où a été posé le dernier pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la condition de victoire est remplie sur la diagonale allant de en haut à droite à en bas à gauche</dd></dl>
+<p>Consiste a vérifier sur la diagonale allant de en haut à droite à en bas à gauche si 4 pions sont allignés en comptant autour du dernier pion posé sur cette diagonale </p>
+
+</div>
+</div>
+<a id="a984d85a915aaea9f88d3bd1b1fb2e30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984d85a915aaea9f88d3bd1b1fb2e30e">&#9670;&nbsp;</a></span>estVainqueurGD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estVainqueurGD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction booléenne indiquant si le joueur a gagné sur la diagonale allant de en haut à gauche à en bas à droite. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: Grille représentant la grille de jeu (la même que tout à l'heure)</td></tr>
+    <tr><td class="paramname">ligne</td><td>: Ligne où a été posé le dernier pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: Colonne où a été posé le dernier pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la condition de victoire est remplie sur la diagonale allant de en haut à gauche à en bas à droite</dd></dl>
+<p>Consiste a vérifier sur la diagonale allant de en haut à gauche à en bas à droite si 4 pions sont allignés en comptant autour du dernier pion posé sur cette diagonale </p>
+
+</div>
+</div>
+<a id="a02f7b7c2343c46fb2eb3345c581ee3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f7b7c2343c46fb2eb3345c581ee3b2">&#9670;&nbsp;</a></span>estVainqueurHoriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estVainqueurHoriz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction booléenne indiquant si le joueur a gagné sur l'axe horizontal. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: Grille représentant la grille de jeu (la même que tout à l'heure)</td></tr>
+    <tr><td class="paramname">ligne</td><td>: Ligne où a été posé le dernier pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: Colonne où a été posé le dernier pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la condition de victoire est remplie à l'horizontal</dd></dl>
+<p>Consiste a vérifier à l'hozontale si 4 pions sont allignés en comptant autour du dernier pion posé </p>
+
+</div>
+</div>
+<a id="af5f027b0b097e7d2f9e97519985162f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f027b0b097e7d2f9e97519985162f7">&#9670;&nbsp;</a></span>estVainqueurVertic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estVainqueurVertic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>tab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction booléenne indiquant si le joueur a gagné sur l'axe vertical. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>: Grille représentant la grille de jeu (la même que tout à l'heure)</td></tr>
+    <tr><td class="paramname">ligne</td><td>: Ligne où a été posé le dernier pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: Colonne où a été posé le dernier pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>True si la condition de victoire est remplie à la verticale</dd></dl>
+<p>Consiste a vérifier à la verticale si 4 pions sont allignés en comptant en bas du dernier pion posé </p>
+
+</div>
+</div>
+<a id="a3e4f2e41d7402790eb76dc1d65e05b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4f2e41d7402790eb76dc1d65e05b0e">&#9670;&nbsp;</a></span>finDePartie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finDePartie </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>recommencer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procédure permettant d'afficher le resultat final de la partie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pion</td><td>: pion du joueur ayant gagné la partie</td></tr>
+    <tr><td class="paramname">recommencer</td><td>: paramètre de sortie indiquant si le joueur a décider de recommencer la partie</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Consiste a donner un afffichage stylisé avec le pion du joueur vainqueur si il y en a un et de proposer aux deux joueurs de refaire une partie. </p>
+
+</div>
+</div>
+<a id="a0966595924ee7c26921c475d41b4d80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0966595924ee7c26921c475d41b4d80f">&#9670;&nbsp;</a></span>grillePleine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool grillePleine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui indique si la grille de jeu est pleine ou non. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: Grille représentant la grille de jeu</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la grille est pleine</dd></dl>
+<p>Consiste à parcourir l'ensemble des elements du tableau pour vérifier si l'un des elements est égal à 'VIDE' et donc si il y a une case sans pion et si c'est le cas la grille n'est pas pleine. </p>
+
+</div>
+</div>
+<a id="a87c1f470b92302f877a82e60a1cf5918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c1f470b92302f877a82e60a1cf5918">&#9670;&nbsp;</a></span>initGrille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initGrille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>procédure qui intialise le tableau du puissance 4 </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: tableau à deux dimensions en entrée</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La procédure intialise la grille en attribuant pour chacun de elements du tableau la valeur VIDE </p>
+
+</div>
+</div>
+<a id="a25962820991fe1806a61b259fccde621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25962820991fe1806a61b259fccde621">&#9670;&nbsp;</a></span>jouer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jouer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>colonne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>rageQuit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procédure permettant à un jouer de jouer son tour. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: Grille représentant la grille de jeu</td></tr>
+    <tr><td class="paramname">pion</td><td>: pion du joueur entrain de jouer</td></tr>
+    <tr><td class="paramname">ligne</td><td>: parametre de sortie de l'indice de la ligne où sera placé le pion</td></tr>
+    <tr><td class="paramname">colonne</td><td>: paramètre de sortie de l'indice de la colonne où sera placé le pion</td></tr>
+    <tr><td class="paramname">rageQuit</td><td>: paramètre de sortie indiquant si le joueur à décidé de recommencer la partie</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Consiste à executer l'action décidée par le joueur sur son tour en appelant les fonctions choisirColonne et trouverLigne. </p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2bf81c8d178fb8a48f3115c0d630fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bf81c8d178fb8a48f3115c0d630fe6">&#9670;&nbsp;</a></span>rules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procédure permettant d'afficher les règles du jeu. </p>
+<p>Affiche de manière stylisé les règles du jeu pendant 5 secondes avant de disparaitre pour laissé la partie continuer </p>
+
+</div>
+</div>
+<a id="ae96747a0a7e62a5256085f8d5173211d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96747a0a7e62a5256085f8d5173211d">&#9670;&nbsp;</a></span>trouveLigne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int trouveLigne </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="puissance4_82comment_8c.html#a28d75bf5b31d027d7c2f4812177f9947">Grille</a>&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui indique la ligne où sera posé le pion. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: Grille repésentant la grille de jeu</td></tr>
+    <tr><td class="paramname">colonne</td><td>: colonne chosiie par le joueur pour poser son pion</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'indice de la ligne où sera posé le pion</dd></dl>
+<p>Parcours ligne par ligne la colonne choisie jusqu'a tomber sur un pion et donc renvoyer à la ligne supérieur, celle qui est vide. Si toute la colonne est pleine elle renverra -1 et si la colonne est vide elle renverra l'indice de la dernière ligne. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="afa35471c5555aab8abbaae1d818b75d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa35471c5555aab8abbaae1d818b75d7">&#9670;&nbsp;</a></span>COLONNE_DEBUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int COLONNE_DEBUT = <a class="el" href="puissance4_82comment_8c.html#a8f8cd1540fdc837cee034be5be8c2aa5">NBCOL</a>/2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8ea4e387273c6109e08085bd9050ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ea4e387273c6109e08085bd9050ca7">&#9670;&nbsp;</a></span>INCONNU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char INCONNU = ' '</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa25c2be9670ba77f0ccbad1f949dda4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25c2be9670ba77f0ccbad1f949dda4b">&#9670;&nbsp;</a></span>PION_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char PION_A = 'X'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93cbc87a0c9739844b09ca78330c000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93cbc87a0c9739844b09ca78330c000">&#9670;&nbsp;</a></span>PION_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char PION_B = 'O'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16d312968aa2cda5d160cf82320b3826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d312968aa2cda5d160cf82320b3826">&#9670;&nbsp;</a></span>RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char RED[18] = &quot;\033[31m●\033[0m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65e70a095fdc823063b2d115d50a391f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e70a095fdc823063b2d115d50a391f">&#9670;&nbsp;</a></span>VIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char VIDE = ' '</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4794c7042c6eca84bc02d8e57d3d0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4794c7042c6eca84bc02d8e57d3d0db">&#9670;&nbsp;</a></span>YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char YELLOW[18] = &quot;\033[33m●\033[0m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
